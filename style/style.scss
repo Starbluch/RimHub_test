@@ -235,7 +235,7 @@ p,a {
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    padding: 4px;
+    padding: 8px;
 }
 
 .main_n {
@@ -245,7 +245,7 @@ p,a {
 .main__navigation {
     max-width: 1160px;
     width: 100%;
-    margin: 140px auto 40px auto;
+    margin: 140px 0 40px 0;
     .img {
         margin: 0 8px;
     }
@@ -323,21 +323,21 @@ p,a {
     }
 }
 
-.certificates__accordion {
+.test__accordion {
     font-family: 'Montserrat';
     width: 100%;
     height: auto;
     list-style: none;
-    .certificates__accordion__item_1 {
+    .test__accordion__item_1 {
         position: relative;
     }
-    .certificates__accordion__item_2 {
+    .test__accordion__item_2 {
         position: relative;
     } 
-    .certificates__accordion__item_3 {
+    .test__accordion__item_3 {
         position: relative;
     }
-    .certificates__accordion__item_4 {
+    .test__accordion__item_4 {
         position: relative;
     }
     .question {
@@ -363,7 +363,7 @@ p,a {
     }
 }
 
-.certificates__accordion-header {
+.test__accordion-header {
     width: 100%;
     min-height: 60px;
     height: auto;
@@ -373,32 +373,32 @@ p,a {
     display: flex;
     align-items: center;
     padding-left: 25px;
-    .certificates__header {
+    .test__header {
         width: 85%;
         font-weight: 600;
     }
 }
 @media (max-width:768px) {
-    .certificates__accordion-header {
+    .test__accordion-header {
         font-size: 18px;
     }   
 }
 @media (max-width:576px) {
-    .certificates__accordion-header {
+    .test__accordion-header {
         font-size: 16px;
     }   
 }
 @media (max-width:450px) {
-    .certificates__accordion-header {
+    .test__accordion-header {
         min-height: 40px;
         font-size: 14px;
     }   
 }
 
-.certificates__accordion-header.active {
+.test__accordion-header.active {
     border-bottom: none;
 } 
-.certificates__accordion-header:after {
+.test__accordion-header:after {
     position: absolute;
     top: 15px;
     right: 0;
@@ -409,7 +409,7 @@ p,a {
     background-image: url(../assets/Icons/Arrow_2.png);
     float: right;
 }
-.certificates__accordion-header.active:after {
+.test__accordion-header.active:after {
     position: absolute;
     top: 15px;
     right: 0;
@@ -420,13 +420,13 @@ p,a {
     background-image: url(../assets/Icons/Arrow_1.png);
 }
 @media (max-width:450px) {
-    .certificates__accordion-header:after,.certificates__accordion-header.active:after {
+    .test__accordion-header:after,.test__accordion-header.active:after {
         top: 7.5px;
     }   
 }
 
 
-.certificates__accordion-body {
+.test__accordion-body {
     height: auto;
     border-right: 1px solid black;
     border-left: 1px solid black;
@@ -434,14 +434,14 @@ p,a {
     display: none;
     padding: 15px 20px;
 
-    .certificates__accordion__hr {
+    .test__accordion__hr {
         width: 100%;
         border:none;
         height: 1px;
         margin: 0;
         background-color: #000000;
     }
-    .certificates__accordion-body__menu {
+    .test__accordion-body__menu {
         display: flex;
         width: 100%;
 
@@ -483,6 +483,59 @@ p,a {
 
 }
 
+.test_btn {
+    margin-top: 30px;
+    width: 350px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color_2;
+    transition: all linear 0.3s;
+    .test_btn_text{
+        width: auto;
+        height: auto;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Ermilov';
+        text-transform: uppercase;
+        color: $color_text_1;
+        margin: 0;
+    }
+    &:hover {
+        background-color: $color__animation;
+    }
+}
+@media (max-width: 768px) {
+    .test_btn {
+        margin-top: 30px;
+        width: 300px;
+        height: 44px;
+        .test_btn_text{
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .test_btn {
+        margin-top: 30px;
+        width: 260px;
+        height: 40px;
+        .test_btn_text{
+            font-size: 12px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .test_btn {
+        margin: 30px auto 0 auto;
+        width: 220px;
+        height: 36px;
+        .test_btn_text{
+            font-size: 11px;
+        }
+    }
+}
 
 
 

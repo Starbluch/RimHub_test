@@ -102,34 +102,15 @@
                 </div>
             </div>
 
-            <section class="certificates__accordion " id="certificates" data-certificates__accordion="open">
+            <section class="test__accordion " id="test" data-certificates__accordion="open">
                 <div class="question">Запитання</div>
                 
-                <div class="certificates__accordion__item_1">
+                <div class="test__accordion__item_1">
 
-                    <div class="certificates__accordion-header"><div class="certificates__header">Житлова нерухомість</div></div>
-                    <div class="certificates__accordion-body">
+                    <div class="test__accordion-header"><div class="test__header">Житлова нерухомість</div></div>
+                    <div class="test__accordion-body">
 
-                        <div class="certificates__accordion-body__menu">
-                            <div class="options">
-                                <div class="option" data-value="item_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
-                                <div class="option" data-value="item_2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
-                                <div class="option" data-value="item_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="question">Запитання</div>
-
-
-                <div class="certificates__accordion__item_2">
-
-                    <div class="certificates__accordion-header"><div class="certificates__header">Маркетинг</div></div>
-                    <div class="certificates__accordion-body">
-
-                        <div class="certificates__accordion-body__menu">
+                        <div class="test__accordion-body__menu">
                             <div class="options">
                                 <div class="option" data-value="item_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
                                 <div class="option" data-value="item_2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
@@ -142,12 +123,12 @@
 
                 <div class="question">Запитання</div>
                 
-                <div class="certificates__accordion__item_3">
+                <div class="test__accordion__item_2">
 
-                    <div class="certificates__accordion-header"><div class="certificates__header">Маркетинг</div></div>
-                    <div class="certificates__accordion-body">
+                    <div class="test__accordion-header"><div class="test__header">Житлова нерухомість</div></div>
+                    <div class="test__accordion-body">
 
-                        <div class="certificates__accordion-body__menu">
+                        <div class="test__accordion-body__menu">
                             <div class="options">
                                 <div class="option" data-value="item_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
                                 <div class="option" data-value="item_2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
@@ -160,12 +141,30 @@
 
                 <div class="question">Запитання</div>
                 
-                <div class="certificates__accordion__item_4">
+                <div class="test__accordion__item_3">
 
-                    <div class="certificates__accordion-header"><div class="certificates__header">Маркетинг</div></div>
-                    <div class="certificates__accordion-body">
+                    <div class="test__accordion-header"><div class="test__header">Житлова нерухомість</div></div>
+                    <div class="test__accordion-body">
 
-                        <div class="certificates__accordion-body__menu">
+                        <div class="test__accordion-body__menu">
+                            <div class="options">
+                                <div class="option" data-value="item_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
+                                <div class="option" data-value="item_2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
+                                <div class="option" data-value="item_3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="question">Запитання</div>
+                
+                <div class="test__accordion__item_4">
+
+                    <div class="test__accordion-header"><div class="test__header">Житлова нерухомість</div></div>
+                    <div class="test__accordion-body">
+
+                        <div class="test__accordion-body__menu">
                             <div class="options">
                                 <div class="option" data-value="item_1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
                                 <div class="option" data-value="item_2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, ea inventore. Vitae praesentium corporis reiciendis suscipit et architecto tempora similique?</div>
@@ -177,7 +176,11 @@
                 </div>
             </section>
 
-
+            <button type="submit" class="test_btn">
+                <p class="test_btn_text">
+                    виконати тестування
+                </p>
+            </button>
 
 
 
@@ -298,24 +301,23 @@
         });
         
         var certificates__accordion = function () {
-    var data = $(".certificates__accordion").attr("data-certificates__accordion");
+    var data = $(".test__accordion").attr("data-test__accordion");
 
     // Обработчик клика на заголовок аккордеона
-    $(".certificates__accordion-header").on("click", function () {
+    $(".test__accordion-header").on("click", function () {
         if (data === "close") {
-            $(".certificates__accordion-body").slideUp();
+            $(".test__accordion-body").slideUp();
             if ($(this).hasClass("active")) {
                 $(this).toggleClass("active");
             } else {
-                $(".certificates__accordion-header").removeClass("active");
+                $(".test__accordion-header").removeClass("active");
                 $(this).toggleClass("active");
             }
         } else {
             $(this).toggleClass("active");
         }
 
-
-        $(this).next(".certificates__accordion-body").not(":animated").slideToggle();
+        $(this).next(".test__accordion-body").not(":animated").slideToggle();
     });
 
     // Обработчик клика на вариант ответа
@@ -324,6 +326,10 @@
         $(this).addClass("selected");
         var selectedValue = $(this).data("value");
         console.log("Вибрано:", selectedValue);
+
+        // Закрываем аккордеон после выбора ответа
+        $(".test__accordion-body").slideUp();
+        $(".test__accordion-header").removeClass("active");
     });
 };
 
